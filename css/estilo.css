@@ -1,0 +1,205 @@
+/* Patrones globales del CSS */ 
+/* Títulos, Enlaces, Botones, Subtítulos, Párrafos, Formularios y otras etiquetas de textos */ 
+h1, h2, h3, h4, h5, p, a, button, form, input, select, textarea, option, table, tr, th, td, span, div, strong, em { font-family: 'Montserrat', sans-serif; }
+
+/* Subtítulos H6 */ 
+h6 { font-family: 'Montserrat', sans-serif; }
+
+/* Asignar display: block; a todas las cajas de estructura */ 
+header, main, footer, aside, section, article, figure, nav, figcaption, div { display: block; }
+
+/* Quitar margen por defecto a etiquetas que lo traen */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+/* Anular margen por defecto de body */ 
+body { margin: 0 !important; }
+
+
+
+/* Componente: HEADER */
+header { width: 100%; height: 70px; position: fixed; top: 0; left: 0; z-index: 99999; margin: 0; float: none; background: #f33; }
+header article { width: 1024px; height: 70px; position: relative; margin: 0 auto; float: none; }
+header article > a { width: 168px; height: auto; position: relative; margin: 18px 0; float: left; transition: all 0.3s ease-in; }
+header article > a img { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; display: block; }
+header article > a:hover { opacity: 0.85; transition: all 0.15s ease-out; }
+header article nav { width: 128px; height: 37px; display: block; margin: 16.5px 0; float: right; position: relative; }
+header article nav a { width: 35px; height: auto; display: block; margin: 0 5px 0 0; float: left; background: #f33; border-radius: 50%; border: solid 1px #fff; font-size: 1em; line-height: 1em; text-align: center; color: #fff; padding: 9px 0; transition: all 0.3s ease-in; }
+header article nav a:hover { background: #fff; color: #f33; transition: all 0.15s ease-out; }
+
+
+
+/* Componente: Contenedor MAIN */
+main { width: 100%; height: auto; position: relative; margin: 70px auto 0 auto; float: none; }
+
+
+
+main section#banner-superior { display: none !important; width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#banner-superior article { width: 1024px; height: 500px; position: relative; margin: 0 auto; float: none; }
+main section#banner-superior article figure { width: 290px; height: 155px; position: relative; margin: 60px 90px 0 0; float: left; }
+main section#banner-superior article figure h3 { font-weight: 700; font-size: 1.75em; line-height: 1.15em; text-align: center; padding: 55px 0 45px 0; color: #111; font-family: 'Montserrat', sans-serif; }
+
+@keyframes anima-flechas-down {
+    0% { top: 0; }
+    100% { top: 10px; }
+}
+main section#banner-superior article figure a#to-down { width: 25px; height: auto; display: block; margin: 0 auto; top: 0; float: none; position: relative; animation-name: anima-flechas-down; animation-direction: alternate; animation-play-state: running; animation-duration: 0.5s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+main section#banner-superior article figure a#to-down img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+
+main section#banner-superior article > img { width: 642px; height: auto; position: relative; margin: 0 0 75px; float: right; }
+
+
+
+main section#fila-canales { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#fila-canales div#ancla-canales { width: 100%; height: 1px; position: absolute; top: -120px; left: 0; margin: 0 auto; float: none; background: transparent; }
+
+main section#fila-canales article { width: 920px; height: 586px; position: relative; margin: 0 auto 80px; float: none; }
+main section#fila-canales article nav { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#fila-canales article nav a { width: 280px; height: 268px; position: relative; margin: 0 40px 40px 0; float: left; background: #202833; border-radius: 25px; padding: 0; text-decoration: none; transition: all 0.3s ease-in; }
+
+main section#fila-canales article nav a:nth-child(3) { margin: 0 0 40px; }
+main section#fila-canales article nav a:nth-child(4) { margin: 0 40px 0 160px; }
+main section#fila-canales article nav a:nth-child(5) { margin: 0; }
+
+main section#fila-canales article nav a img { width: 80px; height: auto; position: relative; margin: 40px auto 20px auto; float: none; display: block; transition: all 0.3s ease-in; }
+main section#fila-canales article nav a span:nth-child(2) { width: 220px; height: auto; position: relative; margin: 0 auto 10px auto; float: none; display: block; font-weight: 500; font-size: 1.25em; line-height: 1.1em; letter-spacing: 0.035em; text-align: center; padding: 0; color: #fff; font-family: 'Montserrat', sans-serif; transition: all 0.3s ease-in; }
+main section#fila-canales article nav a span:nth-child(3) { width: 230px; height: auto; position: relative; margin: 0 auto 40px; float: none; display: block; font-weight: 300; font-size: 0.85em; line-height: 1.35em; letter-spacing: 0.055em; text-align: center; padding: 0; color: #fff; font-family: 'Montserrat', sans-serif; transition: all 0.3s ease-in; }
+main section#fila-canales article nav a span:nth-child(3) strong { font-family: 'Montserrat', sans-serif; letter-spacing: 0.15em; }
+main section#fila-canales article nav a:hover { background: #f33; transition: all 0.15s ease-out; }
+
+
+
+main section#fila-form-correo { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#fila-form-correo article { width: 960px; height: 507px; position: relative; margin: 0 auto; float: none; }
+main section#fila-form-correo article > img { width: 579px; height: auto; position: relative; margin: 80px 60px 80px 0; float: left; }
+main section#fila-form-correo article figure { width: 320px; height: 226px; position: relative; margin: 80px 0 0; float: left; }
+main section#fila-form-correo article figure h5 { font-weight: 700; font-size: 1.55em; line-height: 1.05em; text-align: left; padding: 0 0 12px 0; color: #111; font-family: 'Montserrat', sans-serif; }
+main section#fila-form-correo article figure hr { width: 100%; height: 2px; display: block; margin: 0 auto 12px; float: none; border: none; background: #0CC4C4; border-radius: 5px; }
+
+
+
+main section#fila-70-anos { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #f33; }
+main section#fila-70-anos article { width: 1100px; height: 260px; position: relative; margin: 0 auto; float: none; padding: 80px 0; }
+
+main section#fila-70-anos article figure { width: 380px; height: 260px; position: relative; margin: 0 60px 0 0; float: left; padding: 0; overflow: hidden; border-radius: 10px; }
+main section#fila-70-anos article figure iframe { width: 100%; height: 260px; position: relative; margin: 0 auto; float: none; position: relative; }
+
+main section#fila-70-anos article div.box-derecha { width: 660px; height: 260px; position: relative; margin: 0; float: left; padding: 0; }
+main section#fila-70-anos article div.box-derecha h3 { font-family: Montserrat; font-style: normal; font-weight: 500; font-size: 1.75em; line-height: 1em; letter-spacing: 0.035em; color: #fff; padding: 48px 0 12px; }
+main section#fila-70-anos article div.box-derecha h3 strong { font-weight: 800; }
+main section#fila-70-anos article div.box-derecha p { font-family: Montserrat; font-style: normal; font-weight: 400; font-size: 1em; line-height: 1.55em; letter-spacing: 0.035em; text-align: justify; color: #fff; padding: 0 0 12px; }
+main section#fila-70-anos article div.box-derecha a { width: 250px; height: auto; display: block; margin: 0; float: none; background: #fff; color: #202833; text-decoration: none; text-align: center; border-radius: 25px; font-family: 'Montserrat', sans-serif; padding: 10.5px 0; font-weight: 600; letter-spacing: 0.035em; transition: all 0.3s ease-in; }
+main section#fila-70-anos article div.box-derecha a:hover { background: #202833; color: #fff; transition: all 0.15s ease-out; }
+
+
+
+main section#fila-credijamar { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #0CC4C4; }
+main section#fila-credijamar article { width: 960px; height: 340px; position: relative; margin: 0 auto; float: none; padding: 80px 0; }
+main section#fila-credijamar article figure { width: 320px; height: 226px; position: relative; margin: 0 60px 0 0; float: left; }
+main section#fila-credijamar article figure h4 { font-weight: 700; font-size: 1.75em; line-height: 1.15em; text-align: left; padding: 55px 0 15px 0; color: #fff; font-family: 'Montserrat', sans-serif; }
+main section#fila-credijamar article figure hr { width: 100%; height: 3px; display: block; margin: 0 auto 32px; float: none; border: none; background: #fff; border-radius: 5px; }
+main section#fila-credijamar article figure a { width: 250px; height: auto; display: block; margin: 0; float: none; background: #f33; color: #fff; text-decoration: none; text-align: center; border-radius: 25px; font-family: 'Montserrat', sans-serif; padding: 10.5px 0; font-weight: 600; letter-spacing: 0.075em; transition: all 0.3s ease-in; }
+main section#fila-credijamar article figure a:hover { background: #202833; transition: all 0.15s ease-out; }
+main section#fila-credijamar article > img { width: 514px; height: auto; position: relative; margin: 0; float: left; }
+
+
+
+/* Componente: Footer */
+footer { width: 100%; height: auto; position: relative; margin: 0; float: none; background: #f33; padding: 0; }
+footer article { width: 960px; height: 125px; position: relative; margin: 0 auto; float: none; padding: 75px 0; }
+
+footer article div#izq-footer { width: 168px; height: auto; position: relative; margin: 0; float: left; }
+footer article div#izq-footer nav { width: 128px; height: 37px; display: block; margin: 0 0 55px; float: none; position: relative; }
+footer article div#izq-footer nav a { width: 35px; height: auto; display: block; margin: 0 5px 0 0; float: left; background: #f33; border-radius: 50%; border: solid 1px #fff; font-size: 1em; line-height: 1em; text-align: center; color: #fff; padding: 9px 0; transition: all 0.3s ease-in; }
+footer article div#izq-footer nav a:hover { background: #fff; color: #f33; transition: all 0.15s ease-out; }
+footer article div#izq-footer > a { width: 168px; height: auto; position: relative; margin: 0; float: none; transition: all 0.3s ease-in; }
+footer article div#izq-footer > a img { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; display: block; }
+footer article div#izq-footer > a:hover { opacity: 0.85; transition: all 0.15s ease-out; }
+
+footer article div#der-footer { width: 405px; height: auto; position: relative; margin: 0; float: right; }
+footer article div#der-footer nav { width: 240px; height: auto; position: relative; margin: 0 40px 0 0; float: left; display: inline-block; }
+footer article div#der-footer nav:nth-child(2) { width: 120px; margin: 0; }
+footer article div#der-footer nav a { width: 100%; height: auto; position: relative; margin: 0 auto 10px; float: none; display: block; font-size: 0.9em; line-height: 1.25em; text-align: left; color: #fff; font-weight: 600; letter-spacing: 0.035em; font-family: 'Montserrat', sans-serif; text-decoration: none; transition: all 0.3s ease-in; }
+footer article div#der-footer nav a:hover { color: #202833; transition: all 0.15s ease-out; }
+footer article div#der-footer nav a:last-child { margin: 0 auto; }
+
+
+
+/* Zona de Media Queries para Responsive */
+
+/* Ajustes Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 80%; }
+    header article > a { margin: 18px auto; float: none; display: block; }
+    header article nav { display: none; }
+
+
+
+    main section#banner-superior article { width: 90%; height: auto; }
+    main section#banner-superior article figure { width: 100%; margin: 110px auto 0 auto; float: none; height: auto; }
+    main section#banner-superior article figure h3 { padding: 0 35px 25px 20px; text-align: left; font-size: 1.55em; }
+    main section#banner-superior article figure img { margin: 0 0 0 70px; }
+    main section#banner-superior article > img { width: 100%; margin: 32px auto 75px; float: none; }
+
+    
+
+    main section#fila-canales article { width: 364px; height: 861px; margin: 0 auto 64px; }
+    main section#fila-canales article nav a { width: 168px; height: auto; margin: 5px; float: left; display: inline-block; }
+
+    main section#fila-canales article nav a:nth-child(1) { margin: 5px; height: 283px; }
+    main section#fila-canales article nav a:nth-child(2) { margin: 5px; height: 283px; }
+    main section#fila-canales article nav a:nth-child(3) { margin: 5px; height: 297px; }
+    main section#fila-canales article nav a:nth-child(4) { margin: 5px; height: 297px; }
+    main section#fila-canales article nav a:nth-child(5) { width: 346px; margin: 5px; }
+
+    main section#fila-canales article nav a span:nth-child(2) { width: 150px; font-size: 1.05em; margin: 0 auto 10px; letter-spacing: 0.015em; }
+    main section#fila-canales article nav a span:nth-child(3) { width: 150px; font-size: 0.85em; line-height: 1.05em; margin: 0 auto 37px; }
+
+    main section#fila-canales article nav a:nth-child(5) span:nth-child(3) { width: 215px; }
+
+
+
+    main section#fila-form-correo article { width: 90%; height: auto; }
+    main section#fila-form-correo article > img { width: 80%; margin: 0 auto 32px; float: none; display: block; padding: 48px 0 0 0; }
+    main section#fila-form-correo article figure { width: 300px; height: auto; margin: 0 auto 64px; float: none; }
+    main section#fila-form-correo article figure h5 { padding: 0 0 12px 0; text-align: left; font-size: 1.55em; }
+    main section#fila-form-correo article figure hr { width: 100%; margin: 0 0 12px; }
+
+
+
+    main section#fila-credijamar article { width: 80%; height: auto; padding: 64px 0; }
+    main section#fila-credijamar article figure { margin: 0 0 50px; float: none; }
+    main section#fila-credijamar article figure h4 { padding: 0 0 15px 0; }
+    main section#fila-credijamar article > img { width: 100%; float: none; }
+
+
+
+    main section#fila-70-anos article { width: 80%; height: auto; padding: 64px 0; }
+    main section#fila-70-anos article figure { width: 100%; height: 300px; margin: 0 auto 48px; float: none; }
+    main section#fila-70-anos article figure iframe { height: 300px; }
+
+    main section#fila-70-anos article div.box-derecha { width: 100%; height: auto; margin: 0 auto; float: none; }
+    main section#fila-70-anos article div.box-derecha h3 { text-align: center; font-weight: 600; font-size: 1.75em; line-height: 1em; letter-spacing: 0.035em; color: #fff; padding: 0 0 24px; }
+    main section#fila-70-anos article div.box-derecha p { font-size: 1em; line-height: 1.375em; text-align: center; padding: 0 0 24px; }
+    main section#fila-70-anos article div.box-derecha a { margin: 0 auto; }
+
+
+
+    footer article { width: 80%; height: auto; }
+
+    footer article div#izq-footer { margin: 0 auto 75px; float: none; }
+    footer article div#izq-footer nav { margin: 0 auto 75px; float: none; }
+
+    footer article div#der-footer { width: 240px; margin: 0 auto; float: none; }
+    footer article div#der-footer nav { width: 100%; margin: 0 auto 10px; float: none; display: block; }
+    footer article div#der-footer nav:nth-child(2) { width: 100%; margin: 0 auto; }
+    footer article div#der-footer nav a { text-align: center; }
+}
+
+/* Ajustes para Móviles */
+@media only screen and (max-width: 499px){
+    
+}
+
+@media only screen and (max-width: 399px){
+
+}
